@@ -2,6 +2,7 @@ import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import Tickets from '../tickets/tickets';
 import { TicketProvider } from '../context/TicketContext';
+import { createTicket } from '../context/api';
 
 const mockNavigate = jest.fn();
 
@@ -9,6 +10,12 @@ jest.mock('react-router-dom', () => ({
   ...jest.requireActual('react-router-dom'),
   useNavigate: () => mockNavigate,
 }));
+
+jest.mock('../context/api', () => ({
+  createTicket: jest.fn(),
+  deleteTicket: jest.fn(),
+}));
+
 
 const mockState = {
   tickets: [
@@ -58,23 +65,37 @@ test('filters to only incomplete tickets', async () => {
 });
 
 test('adds a new ticket', async () => {
+  (createTicket as jest.Mock).mockResolvedValueOnce({
+    id: 3,
+    description: 'New Ticket',
+    completed: false,
+    assigneeId: null,
+  });
+
   render(<Tickets />);
   const user = userEvent.setup();
 
-  const input = screen.getByPlaceholderText(/new ticket description/i);
-  await user.type(input, 'New task');
-  await user.click(screen.getByRole('button', { name: /add/i }));
+  const input = screen.getByPlaceholderText(/add new ticket/i);
+  const button = screen.getByRole('button', { name: /add ticket/i });
 
-  expect(mockDispatch).toHaveBeenCalledWith(
-    expect.objectContaining({
-      type: 'ADD_TICKET',
-      payload: expect.objectContaining({
-        description: 'New task',
-        completed: false,
-        assigneeId: null,
-      }),
-    })
-  );
+  await user.type(input, 'New Ticket');
+  await user.click(button);
+
+  expect(createTicket).toHaveBeenCalledWith({
+    description: 'New Ticket',
+    completed: false,
+    assigneeId: null,
+  });
+
+  expect(mockDispatch).toHaveBeenCalledWith({
+    type: 'ADD_TICKET',
+    payload: {
+      id: 3,
+      description: 'New Ticket',
+      completed: false,
+      assigneeId: null,
+    },
+  });
 });
 
 test('navigates to ticket detail on click', async () => {

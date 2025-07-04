@@ -1,0 +1,300 @@
+[1m[2mDetermining test suites to run...[22m[22m[999D[K
+[K[1A
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [0m[7m[37m client [39m[27m[0m [2mclient/src/app/tickets/[22m[1mTicketDetail.spec.tsx[22m
+[K[1A[K[1A
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [0m[7m[37m client [39m[27m[0m [2mclient/src/app/tickets/[22m[1mTicketDetail.spec.tsx[22m
+[K[1A[K[1A
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [0m[7m[37m client [39m[27m[0m [2mclient/src/app/tickets/[22m[1mTicketDetail.spec.tsx[22m
+[K[1A[K[1A
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [0m[7m[37m client [39m[27m[0m [2mclient/src/app/tickets/[22m[1mTicketDetail.spec.tsx[22m
+[K[1A[K[1A
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [0m[7m[37m client [39m[27m[0m [2mclient/src/app/tickets/[22m[1mTicketDetail.spec.tsx[22m
+[K[1A[K[1A
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [0m[7m[37m client [39m[27m[0m [2mclient/src/app/tickets/[22m[1mTicketDetail.spec.tsx[22m
+[K[1A[K[1A
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [0m[7m[37m client [39m[27m[0m [2mclient/src/app/tickets/[22m[1mTicketDetail.spec.tsx[22m
+[K[1A[K[1A[0m[7m[1m[31m FAIL [39m[22m[27m[0m [0m[7m[37m client [39m[27m[0m ]8;;file:///Users/ntth2910/Desktop/Assignment/coding-assignment-react/client/src/app/tickets/TicketDetail.spec.tsx[2mclient/src/app/tickets/[22m[1mTicketDetail.spec.tsx[22m]8;;
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [0m[7m[37m client [39m[27m[0m [2mclient/src/app/tickets/[22m[1mTicketDetail.spec.tsx[22m
+[K[1A[K[1A[1m[31m  [1m● [22m[1mTicketDetails › toggles completion state correctly[39m[22m
+
+    TestingLibraryElementError: Found multiple elements with the role "button" and name `/toggle complete/i`
+
+    Here are the matching elements:
+
+    Ignored nodes: comments, script, style
+    [36m<button[39m
+      [33mclass[39m=[32m"button"[39m
+    [36m>[39m
+      [0mToggle Complete[0m
+    [36m</button>[39m
+
+    Ignored nodes: comments, script, style
+    [36m<button[39m
+      [33mclass[39m=[32m"button"[39m
+    [36m>[39m
+      [0mToggle Complete[0m
+    [36m</button>[39m
+
+    (If this is intentional, then use the `*AllBy*` variant of the query (like `queryAllByText`, `getAllByText`, or `findAllByText`)).
+
+    Ignored nodes: comments, script, style
+    [36m<body>[39m
+      [36m<div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"container"[39m
+        [36m>[39m
+          [36m<h2[39m
+            [33mclass[39m=[32m"title"[39m
+          [36m>[39m
+            [0mTicket #[0m
+            [0m1[0m
+          [36m</h2>[39m
+          [36m<p[39m
+            [33mclass[39m=[32m"description"[39m
+          [36m>[39m
+            [0mTest ticket[0m
+          [36m</p>[39m
+          [36m<p>[39m
+            [0mStatus:[0m
+            [0m [0m
+            [36m<span[39m
+              [33mclass[39m=[32m"notDone"[39m
+            [36m>[39m
+              [0m❌ Incomplete[0m
+            [36m</span>[39m
+          [36m</p>[39m
+          [36m<button[39m
+            [33mclass[39m=[32m"button"[39m
+          [36m>[39m
+            [0mToggle Complete[0m
+          [36m</button>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"assigneeSection"[39m
+          [36m>[39m
+            [36m<p>[39m
+              [0mAssignee:[0m
+              [0m [0m
+              [0mNone[0m
+            [36m</p>[39m
+            [36m<select[39m
+              [33mclass[39m=[32m"select"[39m
+            [36m>[39m
+              [36m<option[39m
+                [33mdisabled[39m=[32m""[39m
+                [33mselected[39m=[32m""[39m
+                [33mvalue[39m=[32m""[39m
+              [36m>[39m
+                [0mAssign to...[0m
+              [36m</option>[39m
+              [36m<option[39m
+                [33mvalue[39m=[32m"1"[39m
+              [36m>[39m
+                [0mUser 1[0m
+              [36m</option>[39m
+              [36m<option[39m
+                [33mvalue[39m=[32m"2"[39m
+              [36m>[39m
+                [0mUser 2[0m
+              [36m</option>[39m
+            [36m</select>[39m
+          [36m</div>[39m
+          [36m<button[39m
+            [33mclass[39m=[32m"backButton"[39m
+          [36m>[39m
+            [0m← Back to List[0m
+          [36m</button>[39m
+        [36m</div>[39m
+      [36m</div>[39m
+      [36m<div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"container"[39m
+        [36m>[39m
+          [36m<h2[39m
+            [33mclass[39m=[32m"title"[39m
+          [36m>[39m
+            [0mTicket #[0m
+            [0m1[0m
+          [36m</h2>[39m
+          [36m<p[39m
+            [33mclass[39m=[32m"description"[39m
+          [36m>[39m
+            [0mTest ticket[0m
+          [36m</p>[39m
+          [36m<p>[39m
+            [0mStatus:[0m
+            [0m [0m
+            [36m<span[39m
+              [33mclass[39m=[32m"done"[39m
+            [36m>[39m
+              [0m✅ Completed[0m
+            [36m</span>[39m
+          [36m</p>[39m
+          [36m<button[39m
+            [33mclass[39m=[32m"button"[39m
+          [36m>[39m
+            [0mToggle Complete[0m
+          [36m</button>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"assigneeSection"[39m
+          [36m>[39m
+            [36m<p>[39m
+              [0mAssignee:[0m
+              [0m [0m
+              [0mNone[0m
+            [36m</p>[39m
+            [36m<select[39m
+              [33mclass[39m=[32m"select"[39m
+            [36m>[39m
+              [36m<option[39m
+                [33mdisabled[39m=[32m""[39m
+                [33mselected[39m=[32m""[39m
+                [33mvalue[39m=[32m""[39m
+              [36m>[39m
+                [0mAssign to...[0m
+              [36m</option>[39m
+              [36m<option[39m
+                [33mvalue[39m=[32m"1"[39m
+              [36m>[39m
+                [0mUser 1[0m
+              [36m</option>[39m
+              [36m<option[39m
+                [33mvalue[39m=[32m"2"[39m
+              [36m>[39m
+                [0mUser 2[0m
+              [36m</option>[39m
+            [36m</select>[39m
+          [36m</div>[39m
+          [36m<button[39m
+            [33mclass[39m=[32m"backButton"[39m
+          [36m>[39m
+            [0m← Back to List[0m
+          [36m</button>[39m
+        [36m</div>[39m
+      [36m</div>[39m
+    [36m</body>[39m
+[2m[22m
+[2m    [0m [90m 127 |[39m     renderWithRouter([32m'1'[39m)[33m;[39m[0m[22m
+[2m    [0m [90m 128 |[39m[0m[22m
+[2m    [0m[31m[1m>[22m[2m[39m[90m 129 |[39m     [36mconst[39m toggleButton2 [33m=[39m screen[33m.[39mgetByRole([32m'button'[39m[33m,[39m { name[33m:[39m [35m/toggle complete/i[39m })[33m;[39m[0m[22m
+[2m    [0m [90m     |[39m                                  [31m[1m^[22m[2m[39m[0m[22m
+[2m    [0m [90m 130 |[39m[0m[22m
+[2m    [0m [90m 131 |[39m     fireEvent[33m.[39mclick(toggleButton2)[33m;[39m[0m[22m
+[2m    [0m [90m 132 |[39m[0m[22m
+[2m[22m
+[2m      [2mat Object.getElementError ([22m[2m../node_modules/@testing-library/dom/dist/config.js[2m:37:19)[22m[2m[22m
+[2m      [2mat getElementError ([22m[2m../node_modules/@testing-library/dom/dist/query-helpers.js[2m:20:35)[22m[2m[22m
+[2m      [2mat getMultipleElementsFoundError ([22m[2m../node_modules/@testing-library/dom/dist/query-helpers.js[2m:23:10)[22m[2m[22m
+[2m      [2mat [22m[2m../node_modules/@testing-library/dom/dist/query-helpers.js[2m:55:13[22m[2m[22m
+[2m      [2mat getByRole ([22m[2m../node_modules/@testing-library/dom/dist/query-helpers.js[2m:95:19)[22m[2m[22m
+[2m      [2mat Object.<anonymous> ([22m[2m[0m[36msrc/app/tickets/TicketDetail.spec.tsx[39m[0m[2m:129:34)[22m[2m[22m
+
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [0m[7m[37m client [39m[27m[0m [2mclient/src/app/tickets/[22m[1mTicketDetail.spec.tsx[22m
+[K[1A[K[1A
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [0m[7m[37m client [39m[27m[0m [2mclient/src/app/tickets/[22m[1mTicketDetail.spec.tsx[22m
+[K[1A[K[1A
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [0m[7m[37m client [39m[27m[0m [2mclient/src/app/tickets/[22m[1mtickets.spec.tsx[22m
+[K[1A[K[1A
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [0m[7m[37m client [39m[27m[0m [2mclient/src/app/tickets/[22m[1mtickets.spec.tsx[22m
+[K[1A[K[1A
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [0m[7m[37m client [39m[27m[0m [2mclient/src/app/tickets/[22m[1mtickets.spec.tsx[22m
+[K[1A[K[1A
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [0m[7m[37m client [39m[27m[0m [2mclient/src/app/tickets/[22m[1mtickets.spec.tsx[22m
+[K[1A[K[1A
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [0m[7m[37m client [39m[27m[0m [2mclient/src/app/tickets/[22m[1mtickets.spec.tsx[22m
+[K[1A[K[1A
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [0m[7m[37m client [39m[27m[0m [2mclient/src/app/tickets/[22m[1mtickets.spec.tsx[22m
+[K[1A[K[1A
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [0m[7m[37m client [39m[27m[0m [2mclient/src/app/tickets/[22m[1mtickets.spec.tsx[22m
+[K[1A[K[1A
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [0m[7m[37m client [39m[27m[0m [2mclient/src/app/tickets/[22m[1mtickets.spec.tsx[22m
+[K[1A[K[1A[0m[7m[1m[31m FAIL [39m[22m[27m[0m [0m[7m[37m client [39m[27m[0m ]8;;file:///Users/ntth2910/Desktop/Assignment/coding-assignment-react/client/src/app/tickets/tickets.spec.tsx[2mclient/src/app/tickets/[22m[1mtickets.spec.tsx[22m]8;;
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [0m[7m[37m client [39m[27m[0m [2mclient/src/app/tickets/[22m[1mtickets.spec.tsx[22m
+[K[1A[K[1A  [1m● [22mConsole
+
+    [2m[31mconsole.error[39m[22m
+[31m      Error adding ticket: ReferenceError: fetch is not defined[39m
+[31m          at createTicket (/Users/ntth2910/Desktop/Assignment/coding-assignment-react/client/src/app/context/api.ts:19:15)[39m
+[31m          at handleAdd (/Users/ntth2910/Desktop/Assignment/coding-assignment-react/client/src/app/tickets/tickets.tsx:26:45)[39m
+[31m          at HTMLUnknownElement.callCallback (/Users/ntth2910/Desktop/Assignment/coding-assignment-react/node_modules/react-dom/cjs/react-dom.development.js:4164:14)[39m
+[31m          at HTMLUnknownElement.callTheUserObjectsOperation (/Users/ntth2910/Desktop/Assignment/coding-assignment-react/node_modules/jsdom/lib/jsdom/living/generated/EventListener.js:26:30)[39m
+[31m          at innerInvokeEventListeners (/Users/ntth2910/Desktop/Assignment/coding-assignment-react/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:340:25)[39m
+[31m          at invokeEventListeners (/Users/ntth2910/Desktop/Assignment/coding-assignment-react/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:276:3)[39m
+[31m          at HTMLUnknownElementImpl._dispatch (/Users/ntth2910/Desktop/Assignment/coding-assignment-react/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:223:9)[39m
+[31m          at HTMLUnknownElementImpl.dispatchEvent (/Users/ntth2910/Desktop/Assignment/coding-assignment-react/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:94:17)[39m
+[31m          at HTMLUnknownElement.dispatchEvent (/Users/ntth2910/Desktop/Assignment/coding-assignment-react/node_modules/jsdom/lib/jsdom/living/generated/EventTarget.js:241:34)[39m
+[31m          at Object.invokeGuardedCallbackDev (/Users/ntth2910/Desktop/Assignment/coding-assignment-react/node_modules/react-dom/cjs/react-dom.development.js:4213:16)[39m
+[31m          at invokeGuardedCallback (/Users/ntth2910/Desktop/Assignment/coding-assignment-react/node_modules/react-dom/cjs/react-dom.development.js:4277:31)[39m
+[31m          at invokeGuardedCallbackAndCatchFirstError (/Users/ntth2910/Desktop/Assignment/coding-assignment-react/node_modules/react-dom/cjs/react-dom.development.js:4291:25)[39m
+[31m          at executeDispatch (/Users/ntth2910/Desktop/Assignment/coding-assignment-react/node_modules/react-dom/cjs/react-dom.development.js:9041:3)[39m
+[31m          at processDispatchQueueItemsInOrder (/Users/ntth2910/Desktop/Assignment/coding-assignment-react/node_modules/react-dom/cjs/react-dom.development.js:9073:7)[39m
+[31m          at processDispatchQueue (/Users/ntth2910/Desktop/Assignment/coding-assignment-react/node_modules/react-dom/cjs/react-dom.development.js:9086:5)[39m
+[31m          at dispatchEventsForPlugins (/Users/ntth2910/Desktop/Assignment/coding-assignment-react/node_modules/react-dom/cjs/react-dom.development.js:9097:3)[39m
+[31m          at /Users/ntth2910/Desktop/Assignment/coding-assignment-react/node_modules/react-dom/cjs/react-dom.development.js:9288:12[39m
+[31m          at batchedUpdates$1 (/Users/ntth2910/Desktop/Assignment/coding-assignment-react/node_modules/react-dom/cjs/react-dom.development.js:26140:12)[39m
+[31m          at batchedUpdates (/Users/ntth2910/Desktop/Assignment/coding-assignment-react/node_modules/react-dom/cjs/react-dom.development.js:3991:12)[39m
+[31m          at dispatchEventForPluginEventSystem (/Users/ntth2910/Desktop/Assignment/coding-assignment-react/node_modules/react-dom/cjs/react-dom.development.js:9287:3)[39m
+[31m          at dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay (/Users/ntth2910/Desktop/Assignment/coding-assignment-react/node_modules/react-dom/cjs/react-dom.development.js:6465:5)[39m
+[31m          at dispatchEvent (/Users/ntth2910/Desktop/Assignment/coding-assignment-react/node_modules/react-dom/cjs/react-dom.development.js:6457:5)[39m
+[31m          at dispatchDiscreteEvent (/Users/ntth2910/Desktop/Assignment/coding-assignment-react/node_modules/react-dom/cjs/react-dom.development.js:6430:5)[39m
+[31m          at HTMLDivElement.callTheUserObjectsOperation (/Users/ntth2910/Desktop/Assignment/coding-assignment-react/node_modules/jsdom/lib/jsdom/living/generated/EventListener.js:26:30)[39m
+[31m          at innerInvokeEventListeners (/Users/ntth2910/Desktop/Assignment/coding-assignment-react/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:340:25)[39m
+[31m          at invokeEventListeners (/Users/ntth2910/Desktop/Assignment/coding-assignment-react/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:276:3)[39m
+[31m          at HTMLButtonElementImpl._dispatch (/Users/ntth2910/Desktop/Assignment/coding-assignment-react/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:223:9)[39m
+[31m          at HTMLButtonElementImpl.dispatchEvent (/Users/ntth2910/Desktop/Assignment/coding-assignment-react/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:94:17)[39m
+[31m          at HTMLButtonElement.dispatchEvent (/Users/ntth2910/Desktop/Assignment/coding-assignment-react/node_modules/jsdom/lib/jsdom/living/generated/EventTarget.js:241:34)[39m
+[31m          at /Users/ntth2910/Desktop/Assignment/coding-assignment-react/node_modules/@testing-library/user-event/dist/cjs/event/dispatchEvent.js:47:43[39m
+[31m          at /Users/ntth2910/Desktop/Assignment/coding-assignment-react/node_modules/@testing-library/react/dist/pure.js:79:16[39m
+[31m          at /Users/ntth2910/Desktop/Assignment/coding-assignment-react/node_modules/@testing-library/react/dist/act-compat.js:64:24[39m
+[31m          at act (/Users/ntth2910/Desktop/Assignment/coding-assignment-react/node_modules/react/cjs/react.development.js:2512:16)[39m
+[31m          at /Users/ntth2910/Desktop/Assignment/coding-assignment-react/node_modules/@testing-library/react/dist/act-compat.js:63:25[39m
+[31m          at Object.eventWrapper (/Users/ntth2910/Desktop/Assignment/coding-assignment-react/node_modules/@testing-library/react/dist/pure.js:78:28)[39m
+[31m          at Object.wrapEvent (/Users/ntth2910/Desktop/Assignment/coding-assignment-react/node_modules/@testing-library/user-event/dist/cjs/event/wrapEvent.js:8:28)[39m
+[31m          at Object.dispatchEvent (/Users/ntth2910/Desktop/Assignment/coding-assignment-react/node_modules/@testing-library/user-event/dist/cjs/event/dispatchEvent.js:47:22)[39m
+[31m          at Object.dispatchUIEvent (/Users/ntth2910/Desktop/Assignment/coding-assignment-react/node_modules/@testing-library/user-event/dist/cjs/event/dispatchEvent.js:24:26)[39m
+[31m          at Mouse.up (/Users/ntth2910/Desktop/Assignment/coding-assignment-react/node_modules/@testing-library/user-event/dist/cjs/system/pointer/mouse.js:91:30)[39m
+[31m          at PointerHost.release (/Users/ntth2910/Desktop/Assignment/coding-assignment-react/node_modules/@testing-library/user-event/dist/cjs/system/pointer/index.js:74:28)[39m
+[31m          at pointerAction (/Users/ntth2910/Desktop/Assignment/coding-assignment-react/node_modules/@testing-library/user-event/dist/cjs/pointer/index.js:62:47)[39m
+[31m          at async Object.pointer (/Users/ntth2910/Desktop/Assignment/coding-assignment-react/node_modules/@testing-library/user-event/dist/cjs/pointer/index.js:35:9)[39m
+[31m          at async Object.asyncWrapper (/Users/ntth2910/Desktop/Assignment/coding-assignment-react/node_modules/@testing-library/react/dist/pure.js:71:14)[39m
+[31m          at async Object.<anonymous> (/Users/ntth2910/Desktop/Assignment/coding-assignment-react/client/src/app/tickets/tickets.spec.tsx:66:3)[39m
+[2m[22m
+[2m    [0m [90m 28 |[39m       setDescription([32m''[39m)[33m;[39m[0m[22m
+[2m    [0m [90m 29 |[39m     } [36mcatch[39m (err) {[0m[22m
+[2m    [0m[31m[1m>[22m[2m[39m[90m 30 |[39m       console[33m.[39merror([32m'Error adding ticket:'[39m[33m,[39m err)[33m;[39m[0m[22m
+[2m    [0m [90m    |[39m               [31m[1m^[22m[2m[39m[0m[22m
+[2m    [0m [90m 31 |[39m     }[0m[22m
+[2m    [0m [90m 32 |[39m   }[33m;[39m[0m[22m
+[2m    [0m [90m 33 |[39m[0m[22m
+[2m[22m
+[2m      [2mat handleAdd ([22m[2msrc/app/tickets/tickets.tsx[2m:30:15)[22m[2m[22m
+
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [0m[7m[37m client [39m[27m[0m [2mclient/src/app/tickets/[22m[1mtickets.spec.tsx[22m
+[K[1A[K[1A[1m[31m  [1m● [22m[1madds a new ticket[39m[22m
+
+    [2mexpect([22m[31mjest.fn()[39m[2m).[22mtoHaveBeenCalledWith[2m([22m[32m...expected[39m[2m)[22m
+
+    Expected: [32mObjectContaining {"payload": ObjectContaining {"assigneeId": null, "completed": false, "description": "New task"}, "type": "ADD_TICKET"}[39m
+
+    Number of calls: [31m0[39m
+[2m[22m
+[2m    [0m [90m 66 |[39m   [36mawait[39m user[33m.[39mclick(screen[33m.[39mgetByRole([32m'button'[39m[33m,[39m { name[33m:[39m [35m/add/i[39m }))[33m;[39m[0m[22m
+[2m    [0m [90m 67 |[39m[0m[22m
+[2m    [0m[31m[1m>[22m[2m[39m[90m 68 |[39m   expect(mockDispatch)[33m.[39mtoHaveBeenCalledWith([0m[22m
+[2m    [0m [90m    |[39m                        [31m[1m^[22m[2m[39m[0m[22m
+[2m    [0m [90m 69 |[39m     expect[33m.[39mobjectContaining({[0m[22m
+[2m    [0m [90m 70 |[39m       type[33m:[39m [32m'ADD_TICKET'[39m[33m,[39m[0m[22m
+[2m    [0m [90m 71 |[39m       payload[33m:[39m expect[33m.[39mobjectContaining({[0m[22m
+[2m[22m
+[2m      [2mat Object.<anonymous> ([22m[2m[0m[36msrc/app/tickets/tickets.spec.tsx[39m[0m[2m:68:24)[22m[2m[22m
+
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [0m[7m[37m client [39m[27m[0m [2mclient/src/app/tickets/[22m[1mtickets.spec.tsx[22m
+[K[1A[K[1A[999D[K[1mTest Suites: [22m[1m[31m2 failed[39m[22m, 2 total
+[1mTests:       [22m[1m[31m2 failed[39m[22m, [1m[32m9 passed[39m[22m, 11 total
+[1mSnapshots:   [22m0 total
+[1mTime:[22m        0.819 s, estimated 1 s
+[2mRan all test suites[22m[2m.[22m

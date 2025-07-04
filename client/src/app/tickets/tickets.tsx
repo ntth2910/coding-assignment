@@ -58,13 +58,13 @@ const Tickets = () => {
       <div className={styles["form"]}>
         <input
           type="text"
-          placeholder="New ticket description..."
+         placeholder="Add new ticket"
           value={description}
           onChange={(e) => setDescription(e.target.value)}
           className={styles["input"]}
         />
-        <button onClick={handleAdd} className={styles["addButton"]}>
-          Add
+        <button onClick={handleAdd} className={styles["addButton"]} name="add ticket">
+        Add Ticket
         </button>
       </div>
 
