@@ -1,0 +1,231 @@
+
+[36m>[39m [7m[1m[36m NX [39m[22m[27m [1mWeb Development Server is listening at http://localhost:4200/[22m
+
+Entrypoint [1mmain[39m[22m = [1m[32mruntime.js[39m[22m [1m[32mvendor.js[39m[22m [1m[32mmain.css[39m[22m [1m[32mmain.js[39m[22m 4 auxiliary assets
+Entrypoint [1mstyles[39m[22m = [1m[32mruntime.js[39m[22m [1m[32mstyles.css[39m[22m [1m[32mstyles.js[39m[22m 3 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m (main) 11.2 KiB (javascript) 755 bytes (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m (runtime) 31.9 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 166 KiB (javascript) 80 bytes (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 1.65 MiB [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+
+[1m[33mWARNING[39m[22m in [1m./client/src/app/app.tsx[39m[22m [1m[32m211:52-59[39m[22m
+[1mexport 'default' (imported as 'Tickets') was [1m[31mnot found[39m[22m[1m in './tickets/tickets' (possible exports: [1m[32mTickets[39m[22m[1m)[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./client/src/app/app.tsx:[32m[1m6:8[22m[39m[1m[39m[22m
+[90mTS2613: [39mModule '"/Users/ntth2910/Desktop/Assignment/coding-assignment-react/client/src/app/tickets/tickets"' has no default export. Did you mean to use 'import { Tickets } from "/Users/ntth2910/Desktop/Assignment/coding-assignment-react/client/src/app/tickets/tickets"' instead?
+  [0m [90m 4 |[39m[0m
+  [0m [90m 5 |[39m [36mimport[39m styles [36mfrom[39m [32m'./app.module.css'[39m[33m;[39m[0m
+  [0m[31m[1m>[22m[39m[90m 6 |[39m [36mimport[39m [33mTickets[39m [36mfrom[39m [32m'./tickets/tickets'[39m[33m;[39m[0m
+  [0m [90m   |[39m        [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 7 |[39m[0m
+  [0m [90m 8 |[39m [36mconst[39m [33mApp[39m [33m=[39m () [33m=>[39m {[0m
+  [0m [90m 9 |[39m   [36mconst[39m [tickets[33m,[39m setTickets] [33m=[39m useState([] [36mas[39m [33mTicket[39m[])[33m;[39m[0m
+
+webpack compiled with [1m[31m1 error[39m[22m and [1m[33m1 warning[39m[22m (a6ed77c180ceb527)
+Entrypoint [1mmain[39m[22m = 6 assets 6 auxiliary assets
+Entrypoint [1mstyles[39m[22m = [1m[32mruntime.js[39m[22m [1m[32m1.a6ed77c180ceb527.hot-update.js[39m[22m [1m[32mstyles.css[39m[22m [1m[32mstyles.js[39m[22m [1m[32m2.a6ed77c180ceb527.hot-update.js[39m[22m 5 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32m0.a6ed77c180ceb527.hot-update.js[39m[22m (main) 7.91 KiB (javascript) 37 bytes (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32m1.a6ed77c180ceb527.hot-update.js[39m[22m (runtime) 31.9 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m, [1m[32m2.a6ed77c180ceb527.hot-update.js[39m[22m (styles) 166 KiB (javascript) 80 bytes (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 1.65 MiB [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./client/src/app/app.tsx:[32m[1m32:35[22m[39m[1m[39m[22m
+[90mTS2552: [39mCannot find name 'Tickets'. Did you mean 'tickets'?
+  [0m [90m 30 |[39m       [33m<[39m[33mh1[39m[33m>[39m[33mTicketing[39m [33mApp[39m[33m<[39m[33m/[39m[33mh1[39m[33m>[39m[0m
+  [0m [90m 31 |[39m       [33m<[39m[33mRoutes[39m[33m>[39m[0m
+  [0m[31m[1m>[22m[39m[90m 32 |[39m         [33m<[39m[33mRoute[39m path[33m=[39m[32m"/"[39m element[33m=[39m{[33m<[39m[33mTickets[39m tickets[33m=[39m{tickets} [35m/>} /[39m[33m>[39m[0m
+  [0m [90m    |[39m                                   [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 33 |[39m         {[90m/* Hint: Try `npx nx g component TicketDetails --project=client --no-export` to generate this component  */[39m}[0m
+  [0m [90m 34 |[39m         [33m<[39m[33mRoute[39m path[33m=[39m[32m"/:id"[39m element[33m=[39m{[33m<[39m[33mh2[39m[33m>[39m[33mDetails[39m [33mNot[39m [33mImplemented[39m[33m<[39m[35m/h2>} /[39m[33m>[39m[0m
+  [0m [90m 35 |[39m       [33m<[39m[33m/[39m[33mRoutes[39m[33m>[39m[0m
+
+webpack compiled with [1m[31m1 error[39m[22m (1f8f97eabff0cd73)
+Entrypoint [1mmain[39m[22m = 6 assets 6 auxiliary assets
+Entrypoint [1mstyles[39m[22m = [1m[32mruntime.js[39m[22m [1m[32m1.1f8f97eabff0cd73.hot-update.js[39m[22m [1m[32mstyles.css[39m[22m [1m[32mstyles.js[39m[22m [1m[32m2.1f8f97eabff0cd73.hot-update.js[39m[22m 5 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32m0.1f8f97eabff0cd73.hot-update.js[39m[22m (main) 11.2 KiB (javascript) 755 bytes (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32m1.1f8f97eabff0cd73.hot-update.js[39m[22m (runtime) 31.9 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m, [1m[32m2.1f8f97eabff0cd73.hot-update.js[39m[22m (styles) 166 KiB (javascript) 80 bytes (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 1.65 MiB [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./client/src/app/app.tsx:[32m[1m33:43[22m[39m[1m[39m[22m
+[90mTS2322: [39mType '{ tickets: Ticket[]; }' is not assignable to type 'IntrinsicAttributes'.
+  Property 'tickets' does not exist on type 'IntrinsicAttributes'.
+  [0m [90m 31 |[39m       [33m<[39m[33mh1[39m[33m>[39m[33mTicketing[39m [33mApp[39m[33m<[39m[33m/[39m[33mh1[39m[33m>[39m[0m
+  [0m [90m 32 |[39m       [33m<[39m[33mRoutes[39m[33m>[39m[0m
+  [0m[31m[1m>[22m[39m[90m 33 |[39m         [33m<[39m[33mRoute[39m path[33m=[39m[32m"/"[39m element[33m=[39m{[33m<[39m[33mTickets[39m tickets[33m=[39m{tickets} [35m/>} /[39m[33m>[39m[0m
+  [0m [90m    |[39m                                           [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 34 |[39m         {[90m/* Hint: Try `npx nx g component TicketDetails --project=client --no-export` to generate this component  */[39m}[0m
+  [0m [90m 35 |[39m         [33m<[39m[33mRoute[39m path[33m=[39m[32m"/:id"[39m element[33m=[39m{[33m<[39m[33mh2[39m[33m>[39m[33mDetails[39m [33mNot[39m [33mImplemented[39m[33m<[39m[35m/h2>} /[39m[33m>[39m[0m
+  [0m [90m 36 |[39m       [33m<[39m[33m/[39m[33mRoutes[39m[33m>[39m[0m
+
+webpack compiled with [1m[31m1 error[39m[22m (25a864bee2575a31)
+Entrypoint [1mmain[39m[22m = 6 assets 6 auxiliary assets
+Entrypoint [1mstyles[39m[22m = [1m[32mruntime.js[39m[22m [1m[32m1.25a864bee2575a31.hot-update.js[39m[22m [1m[32mstyles.css[39m[22m [1m[32mstyles.js[39m[22m [1m[32m2.25a864bee2575a31.hot-update.js[39m[22m 5 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32m0.25a864bee2575a31.hot-update.js[39m[22m (main) 11.2 KiB (javascript) 755 bytes (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32m1.25a864bee2575a31.hot-update.js[39m[22m (runtime) 31.9 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m, [1m[32m2.25a864bee2575a31.hot-update.js[39m[22m (styles) 166 KiB (javascript) 80 bytes (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 1.65 MiB [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./client/src/app/app.tsx:[32m[1m33:43[22m[39m[1m[39m[22m
+[90mTS2322: [39mType '{ tickets: Ticket[]; }' is not assignable to type 'IntrinsicAttributes'.
+  Property 'tickets' does not exist on type 'IntrinsicAttributes'.
+  [0m [90m 31 |[39m       [33m<[39m[33mh1[39m[33m>[39m[33mTicketing[39m [33mApp[39m[33m<[39m[33m/[39m[33mh1[39m[33m>[39m[0m
+  [0m [90m 32 |[39m       [33m<[39m[33mRoutes[39m[33m>[39m[0m
+  [0m[31m[1m>[22m[39m[90m 33 |[39m         [33m<[39m[33mRoute[39m path[33m=[39m[32m"/"[39m element[33m=[39m{[33m<[39m[33mTickets[39m tickets[33m=[39m{tickets} [35m/>} /[39m[33m>[39m[0m
+  [0m [90m    |[39m                                           [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 34 |[39m         {[90m/* Hint: Try `npx nx g component TicketDetails --project=client --no-export` to generate this component  */[39m}[0m
+  [0m [90m 35 |[39m         [33m<[39m[33mRoute[39m path[33m=[39m[32m"/:id"[39m element[33m=[39m{[33m<[39m[33mh2[39m[33m>[39m[33mDetails[39m [33mNot[39m [33mImplemented[39m[33m<[39m[35m/h2>} /[39m[33m>[39m[0m
+  [0m [90m 36 |[39m       [33m<[39m[33m/[39m[33mRoutes[39m[33m>[39m[0m
+
+webpack compiled with [1m[31m1 error[39m[22m (97dc8ec779e035d8)
+Entrypoint [1mmain[39m[22m = 6 assets 6 auxiliary assets
+Entrypoint [1mstyles[39m[22m = [1m[32mruntime.js[39m[22m [1m[32m1.97dc8ec779e035d8.hot-update.js[39m[22m [1m[32mstyles.css[39m[22m [1m[32mstyles.js[39m[22m [1m[32m2.97dc8ec779e035d8.hot-update.js[39m[22m 5 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32m0.97dc8ec779e035d8.hot-update.js[39m[22m (main) 11.2 KiB (javascript) 755 bytes (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32m1.97dc8ec779e035d8.hot-update.js[39m[22m (runtime) 31.9 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m, [1m[32m2.97dc8ec779e035d8.hot-update.js[39m[22m (styles) 166 KiB (javascript) 80 bytes (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 1.65 MiB [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./client/src/app/app.tsx:[32m[1m33:43[22m[39m[1m[39m[22m
+[90mTS2322: [39mType '{ tickets: Ticket[]; }' is not assignable to type 'IntrinsicAttributes'.
+  Property 'tickets' does not exist on type 'IntrinsicAttributes'.
+  [0m [90m 31 |[39m       [33m<[39m[33mh1[39m[33m>[39m[33mTicketing[39m [33mApp[39m[33m<[39m[33m/[39m[33mh1[39m[33m>[39m[0m
+  [0m [90m 32 |[39m       [33m<[39m[33mRoutes[39m[33m>[39m[0m
+  [0m[31m[1m>[22m[39m[90m 33 |[39m         [33m<[39m[33mRoute[39m path[33m=[39m[32m"/"[39m element[33m=[39m{[33m<[39m[33mTickets[39m tickets[33m=[39m{tickets} [35m/>} /[39m[33m>[39m[0m
+  [0m [90m    |[39m                                           [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 34 |[39m         {[90m/* Hint: Try `npx nx g component TicketDetails --project=client --no-export` to generate this component  */[39m}[0m
+  [0m [90m 35 |[39m         [33m<[39m[33mRoute[39m path[33m=[39m[32m"/:id"[39m element[33m=[39m{[33m<[39m[33mh2[39m[33m>[39m[33mDetails[39m [33mNot[39m [33mImplemented[39m[33m<[39m[35m/h2>} /[39m[33m>[39m[0m
+  [0m [90m 36 |[39m       [33m<[39m[33m/[39m[33mRoutes[39m[33m>[39m[0m
+
+webpack compiled with [1m[31m1 error[39m[22m (a51c1d678ccd413f)
+Entrypoint [1mmain[39m[22m = [1m[32mruntime.js[39m[22m [1m[32m1.a51c1d678ccd413f.hot-update.js[39m[22m [1m[32mvendor.js[39m[22m [1m[32mmain.js[39m[22m [1m[32m0.a51c1d678ccd413f.hot-update.js[39m[22m 5 auxiliary assets
+Entrypoint [1mstyles[39m[22m = [1m[32mruntime.js[39m[22m [1m[32m1.a51c1d678ccd413f.hot-update.js[39m[22m [1m[32mstyles.css[39m[22m [1m[32mstyles.js[39m[22m [1m[32m2.a51c1d678ccd413f.hot-update.js[39m[22m 5 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.js[39m[22m, [1m[32m0.a51c1d678ccd413f.hot-update.js[39m[22m (main) 3.51 KiB [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32m1.a51c1d678ccd413f.hot-update.js[39m[22m (runtime) 31.9 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m, [1m[32m2.a51c1d678ccd413f.hot-update.js[39m[22m (styles) 166 KiB (javascript) 80 bytes (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 1.64 MiB [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./client/src/app/app.tsx[39m[22m [1m[32m4:0-43[39m[22m
+[1mModule [1m[31mnot found[39m[22m[1m: [1m[31mError[39m[22m[1m: Can't resolve './components/Tickets' in '/Users/ntth2910/Desktop/Assignment/coding-assignment-react/client/src/app'[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./client/src/app/app.tsx[39m[22m [1m[32m5:0-55[39m[22m
+[1mModule [1m[31mnot found[39m[22m[1m: [1m[31mError[39m[22m[1m: Can't resolve './components/TicketDetails' in '/Users/ntth2910/Desktop/Assignment/coding-assignment-react/client/src/app'[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./client/src/app/app.tsx:[32m[1m3:21[22m[39m[1m[39m[22m
+[90mTS2307: [39mCannot find module './components/Tickets' or its corresponding type declarations.
+  [0m [90m 1 |[39m [36mimport[39m { [33mBrowserRouter[39m[33m,[39m [33mRoutes[39m[33m,[39m [33mRoute[39m } [36mfrom[39m [32m'react-router-dom'[39m[33m;[39m[0m
+  [0m [90m 2 |[39m [36mimport[39m { [33mTicketProvider[39m } [36mfrom[39m [32m'./context/TicketContext'[39m[33m;[39m[0m
+  [0m[31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m [33mTickets[39m [36mfrom[39m [32m'./components/Tickets'[39m[33m;[39m[0m
+  [0m [90m   |[39m                     [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 4 |[39m [36mimport[39m [33mTicketDetails[39m [36mfrom[39m [32m'./components/TicketDetails'[39m[33m;[39m[0m
+  [0m [90m 5 |[39m[0m
+  [0m [90m 6 |[39m [36mconst[39m [33mApp[39m [33m=[39m () [33m=>[39m ([0m
+
+[1m[31mERROR[39m[22m in [1m./client/src/app/app.tsx:[32m[1m4:27[22m[39m[1m[39m[22m
+[90mTS2307: [39mCannot find module './components/TicketDetails' or its corresponding type declarations.
+  [0m [90m 2 |[39m [36mimport[39m { [33mTicketProvider[39m } [36mfrom[39m [32m'./context/TicketContext'[39m[33m;[39m[0m
+  [0m [90m 3 |[39m [36mimport[39m [33mTickets[39m [36mfrom[39m [32m'./components/Tickets'[39m[33m;[39m[0m
+  [0m[31m[1m>[22m[39m[90m 4 |[39m [36mimport[39m [33mTicketDetails[39m [36mfrom[39m [32m'./components/TicketDetails'[39m[33m;[39m[0m
+  [0m [90m   |[39m                           [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 5 |[39m[0m
+  [0m [90m 6 |[39m [36mconst[39m [33mApp[39m [33m=[39m () [33m=>[39m ([0m
+  [0m [90m 7 |[39m   [33m<[39m[33mTicketProvider[39m[33m>[39m[0m
+
+webpack compiled with [1m[31m4 errors[39m[22m (45da0525db0ed363)
+Entrypoint [1mmain[39m[22m = 6 assets 6 auxiliary assets
+Entrypoint [1mstyles[39m[22m = [1m[32mruntime.js[39m[22m [1m[32m1.a51c1d678ccd413f.hot-update.js[39m[22m [1m[32mstyles.css[39m[22m [1m[32mstyles.js[39m[22m [1m[32m2.a51c1d678ccd413f.hot-update.js[39m[22m 5 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32m0.a51c1d678ccd413f.hot-update.js[39m[22m (main) 6.5 KiB (javascript) 718 bytes (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32m1.a51c1d678ccd413f.hot-update.js[39m[22m (runtime) 31.9 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m, [1m[32m2.a51c1d678ccd413f.hot-update.js[39m[22m (styles) 166 KiB (javascript) 80 bytes (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 1.65 MiB [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./client/src/app/app.tsx:[32m[1m4:27[22m[39m[1m[39m[22m
+[90mTS2307: [39mCannot find module './components/TicketDetails' or its corresponding type declarations.
+  [0m [90m 2 |[39m [36mimport[39m { [33mTicketProvider[39m } [36mfrom[39m [32m'./context/TicketContext'[39m[33m;[39m[0m
+  [0m [90m 3 |[39m [90m// import Tickets from './components/Tickets';[39m[0m
+  [0m[31m[1m>[22m[39m[90m 4 |[39m [36mimport[39m [33mTicketDetails[39m [36mfrom[39m [32m'./components/TicketDetails'[39m[33m;[39m[0m
+  [0m [90m   |[39m                           [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 5 |[39m [36mimport[39m { [33mTickets[39m } [36mfrom[39m [32m'./tickets/tickets'[39m[33m;[39m[0m
+  [0m [90m 6 |[39m[0m
+  [0m [90m 7 |[39m [36mconst[39m [33mApp[39m [33m=[39m () [33m=>[39m ([0m
+
+webpack compiled with [1m[31m1 error[39m[22m (79368ad430c344f1)
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 1.72 MiB (2.19 MiB) = 6 assets 6 auxiliary assets
+Entrypoint [1mstyles[39m[22m 220 KiB (278 KiB) = [1m[32mruntime.js[39m[22m 47.6 KiB [1m[32m1.79368ad430c344f1.hot-update.js[39m[22m 351 bytes [1m[32mstyles.css[39m[22m 119 bytes [1m[32mstyles.js[39m[22m 172 KiB [1m[32m2.79368ad430c344f1.hot-update.js[39m[22m 521 bytes 5 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32m0.79368ad430c344f1.hot-update.js[39m[22m (main) 6.6 KiB (javascript) 718 bytes (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32m1.79368ad430c344f1.hot-update.js[39m[22m (runtime) 31.9 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m, [1m[32m2.79368ad430c344f1.hot-update.js[39m[22m (styles) 166 KiB (javascript) 80 bytes (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 1.65 MiB [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (83faa1bf8c99e1e4)
+Entrypoint [1mmain[39m[22m = 6 assets 6 auxiliary assets
+Entrypoint [1mstyles[39m[22m = [1m[32mruntime.js[39m[22m [1m[32m1.83faa1bf8c99e1e4.hot-update.js[39m[22m [1m[32mstyles.css[39m[22m [1m[32mstyles.js[39m[22m [1m[32m2.83faa1bf8c99e1e4.hot-update.js[39m[22m 5 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32m0.83faa1bf8c99e1e4.hot-update.js[39m[22m (main) 4.92 KiB (javascript) 718 bytes (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32m1.83faa1bf8c99e1e4.hot-update.js[39m[22m (runtime) 31.9 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m, [1m[32m2.83faa1bf8c99e1e4.hot-update.js[39m[22m (styles) 166 KiB (javascript) 80 bytes (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 1.65 MiB [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+
+[1m[33mWARNING[39m[22m in [1m./client/src/app/app.tsx[39m[22m [1m[32m13:48-55[39m[22m
+[1mexport 'Tickets' (imported as 'Tickets') was [1m[31mnot found[39m[22m[1m in './tickets/tickets' (possible exports: [1m[32mdefault[39m[22m[1m)[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./client/src/app/app.tsx:[32m[1m5:10[22m[39m[1m[39m[22m
+[90mTS2614: [39mModule '"./tickets/tickets"' has no exported member 'Tickets'. Did you mean to use 'import Tickets from "./tickets/tickets"' instead?
+  [0m [90m 3 |[39m [90m// import Tickets from './components/Tickets';[39m[0m
+  [0m [90m 4 |[39m [90m// import TicketDetails from './components/TicketDetails';[39m[0m
+  [0m[31m[1m>[22m[39m[90m 5 |[39m [36mimport[39m { [33mTickets[39m } [36mfrom[39m [32m'./tickets/tickets'[39m[33m;[39m[0m
+  [0m [90m   |[39m          [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 6 |[39m[0m
+  [0m [90m 7 |[39m [36mconst[39m [33mApp[39m [33m=[39m () [33m=>[39m ([0m
+  [0m [90m 8 |[39m   [33m<[39m[33mTicketProvider[39m[33m>[39m[0m
+
+[1m[31mERROR[39m[22m in [1m./client/src/app/tickets/tickets.tsx:[32m[1m18:28[22m[39m[1m[39m[22m
+[90mTS4111: [39mProperty 'container' comes from an index signature, so it must be accessed with ['container'].
+  [0m [90m 16 |[39m   [36mconst[39m navigate [33m=[39m useNavigate()[33m;[39m[0m
+  [0m [90m 17 |[39m   [36mreturn[39m ([0m
+  [0m[31m[1m>[22m[39m[90m 18 |[39m     [33m<[39m[33mdiv[39m className[33m=[39m{styles[33m.[39mcontainer}[33m>[39m[0m
+  [0m [90m    |[39m                            [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 19 |[39m       [33m<[39m[33mh2[39m[33m>[39m[33mTickets[39m[33m<[39m[33m/[39m[33mh2[39m[33m>[39m[0m
+  [0m [90m 20 |[39m       [33m<[39m[33mul[39m[33m>[39m[0m
+  [0m [90m 21 |[39m         {state[33m.[39mtickets[33m.[39mmap(t [33m=>[39m ([0m
+
+webpack compiled with [1m[31m2 errors[39m[22m and [1m[33m1 warning[39m[22m (10b568f50dfa5603)
+Entrypoint [1mmain[39m[22m = 6 assets 6 auxiliary assets
+Entrypoint [1mstyles[39m[22m = [1m[32mruntime.js[39m[22m [1m[32m1.10b568f50dfa5603.hot-update.js[39m[22m [1m[32mstyles.css[39m[22m [1m[32mstyles.js[39m[22m [1m[32m2.10b568f50dfa5603.hot-update.js[39m[22m 5 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32m0.10b568f50dfa5603.hot-update.js[39m[22m (main) 4.92 KiB (javascript) 718 bytes (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32m1.10b568f50dfa5603.hot-update.js[39m[22m (runtime) 31.9 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m, [1m[32m2.10b568f50dfa5603.hot-update.js[39m[22m (styles) 166 KiB (javascript) 80 bytes (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 1.65 MiB [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+
+[1m[33mWARNING[39m[22m in [1m./client/src/app/app.tsx[39m[22m [1m[32m13:48-55[39m[22m
+[1mexport 'Tickets' (imported as 'Tickets') was [1m[31mnot found[39m[22m[1m in './tickets/tickets' (possible exports: [1m[32mdefault[39m[22m[1m)[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./client/src/app/app.tsx:[32m[1m5:10[22m[39m[1m[39m[22m
+[90mTS2614: [39mModule '"./tickets/tickets"' has no exported member 'Tickets'. Did you mean to use 'import Tickets from "./tickets/tickets"' instead?
+  [0m [90m 3 |[39m [90m// import Tickets from './components/Tickets';[39m[0m
+  [0m [90m 4 |[39m [90m// import TicketDetails from './components/TicketDetails';[39m[0m
+  [0m[31m[1m>[22m[39m[90m 5 |[39m [36mimport[39m { [33mTickets[39m } [36mfrom[39m [32m'./tickets/tickets'[39m[33m;[39m[0m
+  [0m [90m   |[39m          [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 6 |[39m[0m
+  [0m [90m 7 |[39m [36mconst[39m [33mApp[39m [33m=[39m () [33m=>[39m ([0m
+  [0m [90m 8 |[39m   [33m<[39m[33mTicketProvider[39m[33m>[39m[0m
+
+webpack compiled with [1m[31m1 error[39m[22m and [1m[33m1 warning[39m[22m (3ccfe956dafa1d61)
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 1.72 MiB (2.19 MiB) = 6 assets 6 auxiliary assets
+Entrypoint [1mstyles[39m[22m 220 KiB (278 KiB) = [1m[32mruntime.js[39m[22m 47.6 KiB [1m[32m1.3ccfe956dafa1d61.hot-update.js[39m[22m 351 bytes [1m[32mstyles.css[39m[22m 119 bytes [1m[32mstyles.js[39m[22m 172 KiB [1m[32m2.3ccfe956dafa1d61.hot-update.js[39m[22m 521 bytes 5 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32m0.3ccfe956dafa1d61.hot-update.js[39m[22m (main) 4.92 KiB (javascript) 718 bytes (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32m1.3ccfe956dafa1d61.hot-update.js[39m[22m (runtime) 31.9 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m, [1m[32m2.3ccfe956dafa1d61.hot-update.js[39m[22m (styles) 166 KiB (javascript) 80 bytes (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 1.65 MiB [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (260763ba6bf28a21)
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 1.71 MiB (2.18 MiB) = 6 assets 6 auxiliary assets
+Entrypoint [1mstyles[39m[22m 220 KiB (278 KiB) = [1m[32mruntime.js[39m[22m 47.6 KiB [1m[32m1.260763ba6bf28a21.hot-update.js[39m[22m 351 bytes [1m[32mstyles.css[39m[22m 119 bytes [1m[32mstyles.js[39m[22m 172 KiB [1m[32m2.260763ba6bf28a21.hot-update.js[39m[22m 521 bytes 5 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32m0.260763ba6bf28a21.hot-update.js[39m[22m (main) 4.92 KiB (javascript) 718 bytes (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32m1.260763ba6bf28a21.hot-update.js[39m[22m (runtime) 31.9 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m, [1m[32m2.260763ba6bf28a21.hot-update.js[39m[22m (styles) 166 KiB (javascript) 80 bytes (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 1.65 MiB [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (07e8cff7c1b00b7a)
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 1.71 MiB (2.18 MiB) = 6 assets 6 auxiliary assets
+Entrypoint [1mstyles[39m[22m 220 KiB (278 KiB) = [1m[32mruntime.js[39m[22m 47.6 KiB [1m[32m1.07e8cff7c1b00b7a.hot-update.js[39m[22m 351 bytes [1m[32mstyles.css[39m[22m 119 bytes [1m[32mstyles.js[39m[22m 172 KiB [1m[32m2.07e8cff7c1b00b7a.hot-update.js[39m[22m 521 bytes 5 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.css[39m[22m, [1m[32mmain.js[39m[22m, [1m[32m0.07e8cff7c1b00b7a.hot-update.js[39m[22m (main) 4.92 KiB (javascript) 718 bytes (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32m1.07e8cff7c1b00b7a.hot-update.js[39m[22m (runtime) 31.9 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m, [1m[32m2.07e8cff7c1b00b7a.hot-update.js[39m[22m (styles) 166 KiB (javascript) 80 bytes (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 1.65 MiB [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (5747336ff204e9da)

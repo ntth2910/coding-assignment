@@ -1,2 +1,72 @@
-.tickets {
-}
+.form {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+  
+  .input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+  }
+  
+  .addButton {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .addButton:hover {
+    background-color: #0056b3;
+  }
+
+  .filter {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 16px;
+    justify-content: center;
+  }
+  
+  .filterButton {
+    padding: 6px 12px;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    transition: background-color 0.2s ease;
+  }
+  
+  .filterButton:hover {
+    background-color: #ddd;
+  }
+  
+  .active {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+  }
+
+  .deleteButton {
+    margin-left: 10px;
+    padding: 4px 8px;
+    background-color: #ff4d4f;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .deleteButton:hover {
+    background-color: #d9363e;
+  }
+  
+  
+  

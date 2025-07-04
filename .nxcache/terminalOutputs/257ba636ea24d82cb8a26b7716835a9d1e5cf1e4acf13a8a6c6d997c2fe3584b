@@ -1,0 +1,117 @@
+[1m[2mDetermining test suites to run...[22m[22m[999D[K
+[K[1A
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [0m[7m[37m client [39m[27m[0m [2mclient/src/app/tickets/[22m[1mtickets.spec.tsx[22m
+[K[1A[K[1A
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [0m[7m[37m client [39m[27m[0m [2mclient/src/app/tickets/[22m[1mtickets.spec.tsx[22m
+[K[1A[K[1A
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [0m[7m[37m client [39m[27m[0m [2mclient/src/app/tickets/[22m[1mtickets.spec.tsx[22m
+[K[1A[K[1A
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [0m[7m[37m client [39m[27m[0m [2mclient/src/app/tickets/[22m[1mtickets.spec.tsx[22m
+[K[1A[K[1A
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [0m[7m[37m client [39m[27m[0m [2mclient/src/app/tickets/[22m[1mtickets.spec.tsx[22m
+[K[1A[K[1A
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [0m[7m[37m client [39m[27m[0m [2mclient/src/app/tickets/[22m[1mtickets.spec.tsx[22m
+[K[1A[K[1A
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [0m[7m[37m client [39m[27m[0m [2mclient/src/app/tickets/[22m[1mtickets.spec.tsx[22m
+[K[1A[K[1A
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [0m[7m[37m client [39m[27m[0m [2mclient/src/app/tickets/[22m[1mtickets.spec.tsx[22m
+[K[1A[K[1A[0m[7m[1m[31m FAIL [39m[22m[27m[0m [0m[7m[37m client [39m[27m[0m ]8;;file:///Users/ntth2910/Desktop/Assignment/coding-assignment-react/client/src/app/tickets/tickets.spec.tsx[2mclient/src/app/tickets/[22m[1mtickets.spec.tsx[22m]8;;
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [0m[7m[37m client [39m[27m[0m [2mclient/src/app/tickets/[22m[1mtickets.spec.tsx[22m
+[K[1A[K[1A  [32m✓[39m [2mrenders filtered tickets - ALL (16 ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [0m[7m[37m client [39m[27m[0m [2mclient/src/app/tickets/[22m[1mtickets.spec.tsx[22m
+[K[1A[K[1A  [32m✓[39m [2mfilters to only completed tickets (43 ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [0m[7m[37m client [39m[27m[0m [2mclient/src/app/tickets/[22m[1mtickets.spec.tsx[22m
+[K[1A[K[1A  [32m✓[39m [2mfilters to only incomplete tickets (17 ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [0m[7m[37m client [39m[27m[0m [2mclient/src/app/tickets/[22m[1mtickets.spec.tsx[22m
+[K[1A[K[1A  [32m✓[39m [2madds a new ticket (40 ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [0m[7m[37m client [39m[27m[0m [2mclient/src/app/tickets/[22m[1mtickets.spec.tsx[22m
+[K[1A[K[1A  [32m✓[39m [2mnavigates to ticket detail on click (8 ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [0m[7m[37m client [39m[27m[0m [2mclient/src/app/tickets/[22m[1mtickets.spec.tsx[22m
+[K[1A[K[1A  [31m✕[39m [2mrenders empty state when no tickets (3 ms)[22m
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [0m[7m[37m client [39m[27m[0m [2mclient/src/app/tickets/[22m[1mtickets.spec.tsx[22m
+[K[1A[K[1A
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [0m[7m[37m client [39m[27m[0m [2mclient/src/app/tickets/[22m[1mtickets.spec.tsx[22m
+[K[1A[K[1A[1m[31m  [1m● [22m[1mrenders empty state when no tickets[39m[22m
+
+    TestingLibraryElementError: Unable to find an element with the text: /no tickets available/i. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+    Ignored nodes: comments, script, style
+    [36m<body>[39m
+      [36m<div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"container"[39m
+        [36m>[39m
+          [36m<h2[39m
+            [33mclass[39m=[32m"title"[39m
+          [36m>[39m
+            [0mTickets[0m
+          [36m</h2>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"form"[39m
+          [36m>[39m
+            [36m<input[39m
+              [33mclass[39m=[32m"input"[39m
+              [33mplaceholder[39m=[32m"New ticket description..."[39m
+              [33mtype[39m=[32m"text"[39m
+              [33mvalue[39m=[32m""[39m
+            [36m/>[39m
+            [36m<button[39m
+              [33mclass[39m=[32m"addButton"[39m
+            [36m>[39m
+              [0mAdd[0m
+            [36m</button>[39m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"filter"[39m
+          [36m>[39m
+            [36m<button[39m
+              [33mclass[39m=[32m"filterButton "[39m
+            [36m>[39m
+              [0mAll[0m
+            [36m</button>[39m
+            [36m<button[39m
+              [33mclass[39m=[32m"filterButton "[39m
+            [36m>[39m
+              [0m✅ Completed[0m
+            [36m</button>[39m
+            [36m<button[39m
+              [33mclass[39m=[32m"filterButton "[39m
+            [36m>[39m
+              [0m❌ Incomplete[0m
+            [36m</button>[39m
+          [36m</div>[39m
+          [36m<ul[39m
+            [33mclass[39m=[32m"list"[39m
+          [36m/>[39m
+        [36m</div>[39m
+      [36m</div>[39m
+    [36m</body>[39m
+[2m[22m
+[2m    [0m [90m 91 |[39m   render([33m<[39m[33mTickets[39m [33m/[39m[33m>[39m)[33m;[39m[0m[22m
+[2m    [0m [90m 92 |[39m[0m[22m
+[2m    [0m[31m[1m>[22m[2m[39m[90m 93 |[39m   expect(screen[33m.[39mgetByText([35m/no tickets available/i[39m))[33m.[39mtoBeInTheDocument()[33m;[39m[0m[22m
+[2m    [0m [90m    |[39m                 [31m[1m^[22m[2m[39m[0m[22m
+[2m    [0m [90m 94 |[39m })[33m;[39m[0m[22m
+[2m    [0m [90m 95 |[39m[0m[22m
+[2m[22m
+[2m      [2mat Object.getElementError ([22m[2m../node_modules/@testing-library/dom/dist/config.js[2m:37:19)[22m[2m[22m
+[2m      [2mat [22m[2m../node_modules/@testing-library/dom/dist/query-helpers.js[2m:76:38[22m[2m[22m
+[2m      [2mat [22m[2m../node_modules/@testing-library/dom/dist/query-helpers.js[2m:52:17[22m[2m[22m
+[2m      [2mat getByText ([22m[2m../node_modules/@testing-library/dom/dist/query-helpers.js[2m:95:19)[22m[2m[22m
+[2m      [2mat Object.<anonymous> ([22m[2m[0m[36msrc/app/tickets/tickets.spec.tsx[39m[0m[2m:93:17)[22m[2m[22m
+
+
+[0m[7m[33m[1m RUNS [22m[39m[27m[0m [0m[7m[37m client [39m[27m[0m [2mclient/src/app/tickets/[22m[1mtickets.spec.tsx[22m
+[K[1A[K[1A[999D[K[1mTest Suites: [22m[1m[31m1 failed[39m[22m, 1 total
+[1mTests:       [22m[1m[31m1 failed[39m[22m, [1m[32m5 passed[39m[22m, 6 total
+[1mSnapshots:   [22m0 total
+[1mTime:[22m        0.681 s, estimated 1 s
+[2mRan all test suites[22m[2m.[22m
