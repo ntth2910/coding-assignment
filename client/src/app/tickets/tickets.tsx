@@ -15,27 +15,29 @@ const Tickets = () => {
 
   const handleAdd = async () => {
     if (!description.trim()) return;
-  
+
     const newTicketData = {
       description,
       completed: false,
       assigneeId: null,
     };
-  
+
     try {
       const savedTicket = await createTicket(newTicketData);
-      dispatch({ type: 'ADD_TICKET', payload: savedTicket });
-      setDescription('');
+      dispatch({ type: "ADD_TICKET", payload: savedTicket });
+      setDescription("");
     } catch (err) {
-      console.error('Error adding ticket:', err);
+      console.error("Error adding ticket:", err);
     }
   };
 
   // no api delete yet
   const handleDelete = async (id: number) => {
-    const confirmDelete = window.confirm("Are you sure you want to delete this ticket?");
+    const confirmDelete = window.confirm(
+      "Are you sure you want to delete this ticket?"
+    );
     if (!confirmDelete) return;
-  
+
     try {
       await deleteTicket(id);
       dispatch({ type: "DELETE_TICKET", payload: id });
@@ -43,7 +45,6 @@ const Tickets = () => {
       console.error("Error deleting ticket:", err);
     }
   };
-  
 
   const filteredTickets = state.tickets
     .filter((ticket) => {
@@ -55,7 +56,6 @@ const Tickets = () => {
       ticket.description.toLowerCase().includes(searchTerm.toLowerCase())
     );
 
-
   return (
     <div className={styles["container"]}>
       <h2 className={styles["title"]}>Tickets</h2>
@@ -63,18 +63,22 @@ const Tickets = () => {
       <div className={styles["form"]}>
         <input
           type="text"
-         placeholder="Add new ticket"
+          placeholder="Add new ticket"
           value={description}
           onChange={(e) => setDescription(e.target.value)}
           className={styles["input"]}
         />
-        <button onClick={handleAdd} className={styles["addButton"]} name="add ticket">
-        Add Ticket
+        <button
+          onClick={handleAdd}
+          className={styles["addButton"]}
+          name="add ticket"
+        >
+          Add Ticket
         </button>
       </div>
 
-       {/* Search box */}
-       <div className={styles["search"]}>
+      {/* Search box */}
+      <div className={styles["search"]}>
         <input
           type="text"
           placeholder="Search tickets..."
@@ -116,25 +120,30 @@ const Tickets = () => {
         {filteredTickets.length === 0 ? (
           <li className={styles["empty"]}>No tickets available</li>
         ) : (
-          filteredTickets.map((ticket) => (
-            <li key={ticket.id} className={styles["item"]}>
-              <button
-                className={styles["button"]}
-                onClick={() => navigate(`/${ticket.id}`)}
-              >
-                #{ticket.id} - {ticket.description} [
-                {ticket.completed ? "✅" : "❌"}]
-              </button>
+          filteredTickets.map((ticket) => {
+            const assignee = state.users.find(
+              (u) => u.id === ticket.assigneeId
+            );
 
-              {/* todo */}
-              <button
-                className={styles["deleteButton"]}
-                onClick={() => handleDelete(ticket.id)}
-              >
-                🗑️
-              </button>
-            </li>
-          ))
+            return (
+              <li key={ticket.id} className={styles["item"]}>
+                <button
+                  className={styles["button"]}
+                  onClick={() => navigate(`/${ticket.id}`)}
+                >
+                  #{ticket.id} - {ticket.description} [
+                  {ticket.completed ? "✅" : "❌"}]
+                  {assignee ? ` - 👤 ${assignee.name}` : ""}
+                </button>
+                <button
+                  onClick={() => handleDelete(ticket.id)}
+                  className={styles["deleteButton"]}
+                >
+                  ❌
+                </button>
+              </li>
+            );
+          })
         )}
       </ul>
     </div>
