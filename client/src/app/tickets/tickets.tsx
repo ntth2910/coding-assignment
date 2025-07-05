@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
-import { useTicketContext } from "../context/TicketContext";
+import { Link, useNavigate } from "react-router-dom";
+import { useTicketContext } from "../context/ticket/TicketContext";
+import {useUserContext} from "../context/user/UserContext";
 import styles from "./tickets.module.css";
-import { createTicket, deleteTicket } from "../context/api";
+import { createTicket, deleteTicket } from "../context/ticket/api";
 type FilterType = "ALL" | "COMPLETED" | "INCOMPLETE";
 
 const Tickets = () => {
@@ -59,6 +60,11 @@ const Tickets = () => {
   return (
     <div className={styles["container"]}>
       <h2 className={styles["title"]}>Tickets</h2>
+      <div >
+        <Link to="/users" >
+          User Management
+        </Link>
+      </div>
 
       <div className={styles["form"]}>
         <input

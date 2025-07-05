@@ -1,12 +1,12 @@
 import { useParams, useNavigate } from 'react-router-dom';
 import { useEffect, useState } from 'react';
-import { useTicketContext } from '../context/TicketContext';
+import { useTicketContext } from '../context/ticket/TicketContext';
 import {
   assignTicket,
   unassignTicket,
   completeTicket,
   uncompleteTicket,
-} from '../context/api';
+} from '../context/ticket/api';
 import styles from './ticketDetails.module.css';
 
 const TicketDetails = () => {

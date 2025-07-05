@@ -1,0 +1,80 @@
+asset main.js 10.4 KiB [emitted] [minimized] (name: main) 1 related asset
+asset assets/.gitkeep 0 bytes [emitted] [from: server/src/assets/.gitkeep] [copied]
+cacheable modules 16.7 KiB
+  modules by path ./server/src/users/*.ts 5.15 KiB
+    ./server/src/users/users.module.ts 616 bytes [built] [code generated]
+    + 2 modules
+  modules by path ./server/src/tickets/*.ts 9.94 KiB
+    ./server/src/tickets/tickets.module.ts 701 bytes [built] [code generated]
+    ./server/src/tickets/tickets.service.ts 3.33 KiB [built] [code generated]
+    ./server/src/tickets/tickets.controller.ts 5.92 KiB [built] [code generated]
+  ./server/src/main.ts 795 bytes [built] [code generated]
+  ./server/src/app/app.module.ts 532 bytes [built] [code generated]
+  ./server/src/utils/random-delay.ts 318 bytes [built] [code generated]
+modules by path external "@nestjs/ 84 bytes
+  external "@nestjs/common" 42 bytes [built] [code generated]
+  external "@nestjs/core" 42 bytes [built] [code generated]
+external "tslib" 42 bytes [built] [code generated]
+webpack 5.75.0 compiled successfully in 508 ms
+[36mType-checking in progress...[39m
+[32mNo errors found.[39m
+assets by status 0 bytes [cached] 1 asset
+asset main.js 10.4 KiB [emitted] [minimized] (name: main) 1 related asset
+cached modules 15.1 KiB [cached] 11 modules
+./server/src/users/users.service.ts 1.71 KiB [built] [code generated]
+webpack 5.75.0 compiled successfully in 186 ms
+[31m[1mERROR[22m[39m in [1m./server/src/users/users.service.ts[22m:[32m[1m32:17[22m[39m
+[90mTS2663: [39mCannot find name 'user'. Did you mean the instance member 'this.user'?
+  [0m [90m 30 |[39m[0m
+  [0m [90m 31 |[39m     [36mthis[39m[33m.[39mstoredUsers[33m.[39mpush(newUser)[33m;[39m[0m
+  [0m[31m[1m>[22m[39m[90m 32 |[39m     console[33m.[39mlog(user)[33m;[39m[0m
+  [0m [90m    |[39m                 [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 33 |[39m     [36mreturn[39m newUser[33m;[39m[0m
+  [0m [90m 34 |[39m   }[0m
+  [0m [90m 35 |[39m[0m
+
+Found [31m[1m1 error[22m[39m in 203 ms.
+assets by status 0 bytes [cached] 1 asset
+asset main.js 10.4 KiB [emitted] [minimized] (name: main) 1 related asset
+cached modules 15.1 KiB [cached] 11 modules
+./server/src/users/users.service.ts 1.68 KiB [built] [code generated]
+webpack 5.75.0 compiled successfully in 142 ms
+[32mNo errors found.[39m
+assets by status 0 bytes [cached] 1 asset
+asset main.js 10.4 KiB [emitted] [minimized] (name: main) 1 related asset
+cached modules 15.1 KiB [cached] 11 modules
+./server/src/users/users.service.ts 1.73 KiB [built] [code generated]
+webpack 5.75.0 compiled successfully in 169 ms
+[32mNo errors found.[39m
+assets by status 10.4 KiB [cached] 2 assets
+cached modules 15.1 KiB [cached] 11 modules
+./server/src/users/users.service.ts 1.73 KiB [built]
+webpack 5.75.0 compiled successfully in 45 ms
+[32mNo errors found.[39m
+assets by status 10.4 KiB [cached] 2 assets
+cached modules 15.1 KiB [cached] 11 modules
+./server/src/users/users.service.ts 1.73 KiB [built]
+webpack 5.75.0 compiled successfully in 18 ms
+[32mNo errors found.[39m
+assets by status 0 bytes [cached] 1 asset
+asset main.js 10.4 KiB [emitted] [minimized] (name: main) 1 related asset
+cached modules 14 KiB [cached] 11 modules
+./server/src/users/users.controller.ts 2.87 KiB [built] [code generated]
+webpack 5.75.0 compiled successfully in 174 ms
+[31m[1mERROR[22m[39m in [1m./server/src/users/users.controller.ts[22m:[32m[1m30:21[22m[39m
+[90mTS2693: [39m'Body' only refers to a type, but is being used as a value here.
+  [0m [90m 28 |[39m[0m
+  [0m [90m 29 |[39m   [33m@[39m[33mPost[39m()[0m
+  [0m[31m[1m>[22m[39m[90m 30 |[39m   [36masync[39m createUser([33m@[39m[33mBody[39m() body[33m:[39m { name[33m:[39m string }) {[0m
+  [0m [90m    |[39m                     [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 31 |[39m     [36mawait[39m randomDelay()[33m;[39m[0m
+  [0m [90m 32 |[39m     [36mreturn[39m [36mthis[39m[33m.[39musersService[33m.[39mnewUser({ name[33m:[39m body[33m.[39mname })[33m;[39m[0m
+  [0m [90m 33 |[39m   }[0m
+
+Found [31m[1m1 error[22m[39m in 189 ms.
+assets by status 0 bytes [cached] 1 asset
+asset main.js 10.4 KiB [emitted] [minimized] (name: main) 1 related asset
+cached modules 14 KiB [cached] 11 modules
+./server/src/users/users.controller.ts 2.88 KiB [built] [code generated]
+webpack 5.75.0 compiled successfully in 154 ms
+[32mNo errors found.[39m

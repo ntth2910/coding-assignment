@@ -1,0 +1,28 @@
+.container {
+    padding: 20px;
+  }
+  
+  .addForm {
+    margin-bottom: 16px;
+  }
+  
+  .addForm input {
+    padding: 8px;
+    margin-right: 8px;
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .table th,
+  .table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+  }
+  
+  .table th {
+    background-color: #f4f4f4;
+  }
+  
