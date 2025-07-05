@@ -18,3 +18,25 @@ external "tslib" 42 bytes [built] [code generated]
 webpack 5.75.0 compiled successfully in 408 ms
 [36mType-checking in progress...[39m
 [32mNo errors found.[39m
+assets by status 0 bytes [cached] 1 asset
+asset main.js 9.18 KiB [emitted] [minimized] (name: main) 1 related asset
+cached modules 8.8 KiB [cached] 11 modules
+./server/src/tickets/tickets.controller.ts 5.92 KiB [built] [code generated]
+webpack 5.75.0 compiled successfully in 202 ms
+[31m[1mERROR[22m[39m in [1m./server/src/tickets/tickets.controller.ts[22m:[32m[1m82:47[22m[39m
+[90mTS2339: [39mProperty 'delete' does not exist on type 'TicketsService'.
+  [0m [90m 80 |[39m   [36masync[39m deleteTicket([33m@[39m[33mParam[39m([32m"id"[39m) ticketId[33m:[39m string) {[0m
+  [0m [90m 81 |[39m     [36mawait[39m randomDelay()[33m;[39m[0m
+  [0m[31m[1m>[22m[39m[90m 82 |[39m     [36mconst[39m success [33m=[39m [36mawait[39m [36mthis[39m[33m.[39mticketsService[33m.[39m[36mdelete[39m([33mNumber[39m(ticketId))[33m;[39m[0m
+  [0m [90m    |[39m                                               [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 83 |[39m     [36mif[39m ([33m![39msuccess) [36mthrow[39m [36mnew[39m [33mNotFoundException[39m()[33m;[39m[0m
+  [0m [90m 84 |[39m   }[0m
+  [0m [90m 85 |[39m }[0m
+
+Found [31m[1m1 error[22m[39m in 220 ms.
+assets by status 0 bytes [cached] 1 asset
+asset main.js 9.34 KiB [emitted] [minimized] (name: main) 1 related asset
+cached modules 11.7 KiB [cached] 11 modules
+./server/src/tickets/tickets.service.ts 3.33 KiB [built] [code generated]
+webpack 5.75.0 compiled successfully in 151 ms
+[32mNo errors found.[39m

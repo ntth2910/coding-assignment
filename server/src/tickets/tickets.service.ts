@@ -1,6 +1,6 @@
-import { Injectable } from '@nestjs/common';
-import { Ticket } from '@acme/shared-models';
-import { UsersService } from '../users/users.service';
+import { Injectable } from "@nestjs/common";
+import { Ticket } from "@acme/shared-models";
+import { UsersService } from "../users/users.service";
 
 @Injectable()
 export class TicketsService {
@@ -10,13 +10,13 @@ export class TicketsService {
   private storedTickets: Ticket[] = [
     {
       id: 1,
-      description: 'Install a monitor arm',
+      description: "Install a monitor arm",
       assigneeId: 1,
       completed: false,
     },
     {
       id: 2,
-      description: 'Move the desk to the new location',
+      description: "Move the desk to the new location",
       assigneeId: 1,
       completed: false,
     },
@@ -77,5 +77,13 @@ export class TicketsService {
     } else {
       return false;
     }
+  }
+
+  async delete(id: number): Promise<boolean> {
+    const index = this.storedTickets.findIndex((ticket) => ticket.id === id);
+    if (index === -1) return false;
+
+    this.storedTickets.splice(index, 1);
+    return true;
   }
 }
