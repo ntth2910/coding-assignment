@@ -10,7 +10,7 @@ const Tickets = () => {
   const navigate = useNavigate();
 
   const [description, setDescription] = useState("");
-
+  const [searchTerm, setSearchTerm] = useState("");
   const [filter, setFilter] = useState<FilterType>("ALL");
 
   const handleAdd = async () => {
@@ -45,11 +45,16 @@ const Tickets = () => {
   };
   
 
-  const filteredTickets = state.tickets.filter((ticket) => {
-    if (filter === "COMPLETED") return ticket.completed;
-    if (filter === "INCOMPLETE") return !ticket.completed;
-    return true;
-  });
+  const filteredTickets = state.tickets
+    .filter((ticket) => {
+      if (filter === "COMPLETED") return ticket.completed;
+      if (filter === "INCOMPLETE") return !ticket.completed;
+      return true;
+    })
+    .filter((ticket) =>
+      ticket.description.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+
 
   return (
     <div className={styles["container"]}>
@@ -66,6 +71,17 @@ const Tickets = () => {
         <button onClick={handleAdd} className={styles["addButton"]} name="add ticket">
         Add Ticket
         </button>
+      </div>
+
+       {/* Search box */}
+       <div className={styles["search"]}>
+        <input
+          type="text"
+          placeholder="Search tickets..."
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+          className={styles["input"]}
+        />
       </div>
 
       {/* Filter Buttons */}
